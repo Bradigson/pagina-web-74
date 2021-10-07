@@ -1,0 +1,125 @@
+body{
+    background-image: linear-gradient(to top, #0d1218 0%, #0d1218 100%);
+    display:flex;
+    justify-content:center;
+    
+}
+.lamp, .lamp-head{
+    background:#707B7C ;
+    width:200px;
+    height:200px;
+    margin-top:300px;
+    border-radius:20em;
+    
+}
+.lamp{
+    position:relative;
+    z-index: 100;
+}
+
+.lamp-head{
+    border-radius: 0px;
+    width:100px;
+    height:150px;
+    position:absolute;
+    margin-top:240px;
+}
+.lamp-head::before{
+    content:'';
+    display:block;
+    background:#000;
+    width:100px;
+    height:50px;
+    margin-top:-30px;
+    border-radius:20px  20px  0px 0px;
+}
+.cable{
+    position:absolute;
+    background:#000;
+    height:220px;
+    color:#000;
+}
+.titak{
+    background:#eee;
+    position:absolute;
+    width:100px;
+    height:150px;
+    margin-top:500px;
+    margin-left:800px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:10px;
+    box-shadow:1px 1px 10px 10px rgba(0,0,0,.4);
+}
+.lamp .turnon{
+    background:#eee;
+}
+
+.light{
+    width:190px;
+    height:190px;
+    position:absolute;
+    border-radius:20rem;
+    margin-top:330px;
+    z-index: 200;
+    filter:blur(50px);
+}
+.on{
+   background:#eee;
+   box-shadow:0 0 5px #F1C40F ,
+   0 0 15px #F1C40F ,
+   0 0 30px #F1C40F , 
+   0 0 60px #F1C40F ,
+   0 0 120px #F1C40F ,
+   0 0 240px #F1C40F ,
+   0 0 480px #F1C40F ;
+}
+#boton{
+    color:#eee;
+}
+
+
+
+
+/*media screen*/
+@media screen and (min-width:280px){
+    .titak{
+        margin-left:0px;
+    }
+    .lamp{
+        margin-top:140px;
+    }
+     .lamp-head{
+
+        margin-top:80px;
+
+     }
+     .cable{
+         height:100px;
+     }
+     .light{
+         margin-top:175px;
+     }
+     body{
+         overflow:hidden;
+     }
+}
+@media screen and (min-width:360px){
+    .titak{
+        margin-top:450px;
+    }
+}
+
+
+@media screen  and (min-width:320px){
+    .titak{
+        margin-top:395px;
+    }
+}
+
+@media screen and (min-width:414px){
+    .titak{
+        margin-top:500px;
+    }
+}
